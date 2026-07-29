@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praveenkumar V | Data Scientist & AI / ML Engineer</title>
+  <meta name="description" content="Portfolio of Praveenkumar V - M.Sc Data Science Student at VIT specializing in Machine Learning engineering, predictive modeling with Scikit-learn, SHAP explainable AI, and SQL database systems.">
+  
+  <!-- Open Graph / Social Media Preview Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Praveenkumar V | M.Sc Data Science & AI Engineer">
+  <meta property="og:description" content="Portfolio of Praveenkumar V - M.Sc Data Science graduate at VIT specializing in Machine Learning, Scikit-learn, LightGBM, SHAP Explainable AI, SQL, and Power BI.">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Praveenkumar V | Data Scientist & AI / ML Engineer">
+  <meta property="twitter:description" content="Portfolio of Praveenkumar V - M.Sc Data Science graduate at VIT specializing in Machine Learning, SHAP Explainable AI, SQL, and Power BI.">
+  <meta property="twitter:image" content="assets/profile.jpg">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Chart.js for Interactive ML Simulators -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Particle Animation Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Ambient Glow Elements -->
+  <div class="glow-sphere glow-1"></div>
+  <div class="glow-sphere glow-2"></div>
+  <div class="glow-sphere glow-3"></div>
+
+  <!-- Header Navigation -->
+  <header id="header">
+    <div class="container nav-wrapper">
+      <a href="#hero" class="logo">
+        <div class="logo-icon" onclick="handleLogoClick(event)" title="Praveenkumar V">PV</div>
+        <span>Praveenkumar <span class="gradient-text">V</span></span>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fa-solid fa-paper-plane"></i> Contact Me
+        </a>
+        <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <button class="drawer-close" id="drawer-close-btn">&times;</button>
+    <a href="#hero" class="mobile-nav-link">Home</a>
+    <a href="#skills" class="mobile-nav-link">Skills</a>
+    <a href="#projects" class="mobile-nav-link">Projects</a>
+    <a href="#education" class="mobile-nav-link">Education</a>
+    <a href="#resume" class="mobile-nav-link">Resume</a>
+    <a href="#contact" class="mobile-nav-link">Contact Us</a>
+    <a href="#contact" class="btn btn-primary mt-4">Hire Me</a>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span> Open to Data Science & AI Roles
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <br><span class="gradient-text">Praveenkumar V</span>
+          </h1>
+          <div class="hero-subtitle">
+            <span id="typing-text"></span><span class="typing-cursor"></span>
+          </div>
+          <p class="hero-bio">
+            Analytical & solution-driven Data Science postgraduate specializing in Artificial Intelligence frameworks, Machine Learning engineering, predictive modeling with Scikit-learn, and relational database querying via SQL.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> Explore Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-solid fa-envelope"></i> Contact Us
+            </a>
+            <a href="assets/Praveenkumar_V_Resume.pdf" target="_blank" download class="btn btn-outline">
+              <i class="fa-solid fa-file-arrow-down"></i> CV / Resume
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://linkedin.com/in/praveen-kumar-v-6v" target="_blank" class="social-link" title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/praveenkumarv2024a-arch" target="_blank" class="social-link" title="GitHub Repository">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:praveen20026@gmail.com" class="social-link" title="Send Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+919361379516" class="social-link" title="Call Phone">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <img src="assets/profile.jpg" alt="Praveenkumar V - Data Scientist" class="avatar-img">
+          </div>
+          <div class="tech-chip chip-1">
+            <i class="fa-brands fa-python"></i> Python & ML
+          </div>
+          <div class="tech-chip chip-2">
+            <i class="fa-solid fa-database"></i> SQL Relational
+          </div>
+          <div class="tech-chip chip-3">
+            <i class="fa-solid fa-brain"></i> SHAP Explainable AI
+          </div>
+          <div class="tech-chip chip-4">
+            <i class="fa-solid fa-chart-pie"></i> Power BI / Tableau
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Technical Skills Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag"><i class="fa-solid fa-code"></i> Technical Stack</span>
+          <h2 class="section-title">Skills & Capabilities</h2>
+          <p class="section-subtitle">Core technologies and frameworks I leverage to engineer end-to-end data analytics and predictive AI workflows.</p>
+        </div>
+
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="languages">Languages & DB</button>
+          <button class="filter-btn" data-filter="visualization">Data Visualization</button>
+          <button class="filter-btn" data-filter="tools">Tools & AI Workflows</button>
+        </div>
+
+        <div class="skills-grid" id="skills-container">
+          <!-- Dynamically populated via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag"><i class="fa-solid fa-diagram-project"></i> Portfolio Highlights</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world AI & Machine Learning applications featuring interactive dashboards, sentiment modeling, and SHAP explainability.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Stock Market AI Decision System -->
+          <div class="project-card">
+            <div class="project-header-visual">
+              <div class="project-visual-pattern"></div>
+              <div class="project-icon-large"><i class="fa-solid fa-chart-line"></i></div>
+              <span class="project-badge-top">Full-Stack AI</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Indian Stock Market AI Decision & Paper Trading System</h3>
+              <p class="project-description">
+                Engineered predictive machine learning models combining technical indicators (RSI, MACD), corporate metrics, and news sentiment analysis via Natural Language Processing (NLP) to forecast asset movements.
+              </p>
+              <ul class="project-highlights">
+                <li>Integrated real-time financial market charts & NLP news sentiment analysis engine.</li>
+                <li>Simulated paper trading execution pipeline with automated order matching.</li>
+                <li>Incorporated SHAP plots for transparent model explainability on stock signals.</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">SHAP</span>
+                <span class="tech-tag">NLP</span>
+              </div>
+              <div class="project-footer" style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                <button class="btn btn-primary" style="flex: 1; min-width: 160px;" onclick="openStockSimulator()">
+                  <i class="fa-solid fa-sliders"></i> Live Simulator
+                </button>
+                <a href="https://github.com/praveenkumarv2024a-arch/stock-market-ai-decision-system" target="_blank" class="btn btn-secondary" style="padding: 0.75rem 1.2rem;">
+                  <i class="fa-brands fa-github"></i> GitHub Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: High-Accuracy Loan Predictor & Advisor -->
+          <div class="project-card">
+            <div class="project-header-visual">
+              <div class="project-visual-pattern"></div>
+              <div class="project-icon-large"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+              <span class="project-badge-top">85.42% Accuracy</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Explainable Multi-Page Loan Predictor & Advisor</h3>
+              <p class="project-description">
+                Developed an end-to-end multi-page Streamlit web app powered by optimized LightGBM and Scikit-Learn (85.42% test accuracy) to evaluate loan eligibility, run demographic fairness audits, and generate PDF reports.
+              </p>
+              <ul class="project-highlights">
+                <li>Multi-page Streamlit portal with secure SQLite database and manual admin overrides.</li>
+                <li>Demographic fairness audits (Gender, Marital Status, Property) & dynamic FPDF2 PDF exports.</li>
+                <li>What-if counterfactual loan advisor to recommend actionable steps for rejected applicants.</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">LightGBM</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">SHAP</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">FPDF2</span>
+              </div>
+              <div class="project-footer" style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                <a href="https://loan-predict-v2-adqq6ltncxbzjdx4tpdljd.streamlit.app/" target="_blank" class="btn btn-primary" style="flex: 1; min-width: 160px;">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Streamlit App
+                </a>
+                <a href="https://github.com/praveenkumarv2024a-arch/loan-predict-v2" target="_blank" class="btn btn-secondary" style="padding: 0.75rem 1.2rem;">
+                  <i class="fa-brands fa-github"></i> GitHub Code
+                </a>
+                <button class="btn btn-outline" style="width: 100%; margin-top: 0.5rem;" onclick="openLoanCalculator()">
+                  <i class="fa-solid fa-calculator"></i> SHAP Calculator & Risk Widget
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Timeline Section -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Qualification</span>
+          <h2 class="section-title">Education & Certifications</h2>
+          <p class="section-subtitle">My academic trajectory and specialized data science certifications.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2024 – 2026</span>
+              <h3 class="timeline-degree">Master of Science in Data Science</h3>
+              <div class="timeline-institution">Vellore Institute of Technology (VIT)</div>
+              <p>Specializing in Artificial Intelligence frameworks, Machine Learning algorithms, predictive analytics, and SQL database management.</p>
+              <div class="timeline-score"><i class="fa-solid fa-award"></i> CGPA: 7.3</div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2020 – 2023</span>
+              <h3 class="timeline-degree">Bachelor of Science in Computer Science</h3>
+              <div class="timeline-institution">KMG College of Arts and Science</div>
+              <p>Foundational computer science, software engineering concepts, database systems, object-oriented programming, and mathematical statistics.</p>
+              <div class="timeline-score"><i class="fa-solid fa-award"></i> CGPA: 7.4</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications & Languages -->
+        <div class="mt-5" style="margin-top: 4rem;">
+          <h3 class="text-center mb-4" style="font-size: 1.8rem; margin-bottom: 2rem;">Certifications & Languages</h3>
+          <div class="cert-grid">
+            <div class="cert-card">
+              <div class="cert-icon"><i class="fa-solid fa-microchip"></i></div>
+              <div>
+                <h4 class="cert-title">Introduction to Internet of Things</h4>
+                <p class="cert-issuer">NPTEL Certified</p>
+              </div>
+            </div>
+            <div class="cert-card">
+              <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
+              <div>
+                <h4 class="cert-title">SQL for Data Science</h4>
+                <p class="cert-issuer">One Day National Workshop Certified</p>
+              </div>
+            </div>
+            <div class="cert-card">
+              <div class="cert-icon"><i class="fa-solid fa-language"></i></div>
+              <div>
+                <h4 class="cert-title">Languages Spoken</h4>
+                <p class="cert-issuer">English (Professional) | Tamil (Native)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="resume-box">
+          <div class="resume-info">
+            <h3><i class="fa-solid fa-file-pdf gradient-text"></i> Curriculum Vitae / Resume</h3>
+            <p>Download or view my complete official resume detailing my coursework, Machine Learning projects, and technical skills.</p>
+          </div>
+          <div class="resume-actions">
+            <a href="assets/Praveenkumar_V_Resume.pdf" target="_blank" class="btn btn-secondary">
+              <i class="fa-solid fa-eye"></i> View Resume PDF
+            </a>
+            <a href="assets/Praveenkumar_V_Resume.pdf" download class="btn btn-primary">
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag"><i class="fa-solid fa-headset"></i> Get In Touch</span>
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-subtitle">Have a project, job opportunity, or inquiry? Feel free to reach out directly through any channel below!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details Cards -->
+          <div class="contact-card-list">
+            <a href="mailto:praveen20026@gmail.com" class="contact-card">
+              <div class="contact-card-left">
+                <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <div class="contact-label">Email Address</div>
+                  <div class="contact-value">praveen20026@gmail.com</div>
+                </div>
+              </div>
+              <button class="copy-btn" onclick="copyToClipboard('praveen20026@gmail.com', event)" title="Copy Email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </a>
+
+            <a href="tel:+919361379516" class="contact-card">
+              <div class="contact-card-left">
+                <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <div class="contact-label">Phone / Mobile</div>
+                  <div class="contact-value">+91-9361379516</div>
+                </div>
+              </div>
+              <button class="copy-btn" onclick="copyToClipboard('+919361379516', event)" title="Copy Phone">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </a>
+
+            <div class="contact-card" style="cursor: default;">
+              <div class="contact-card-left">
+                <div class="contact-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <div class="contact-label">Location</div>
+                  <div class="contact-value">Vellore, Tamil Nadu, India</div>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://linkedin.com/in/praveen-kumar-v-6v" target="_blank" class="contact-card">
+              <div class="contact-card-left">
+                <div class="contact-icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div>
+                  <div class="contact-label">LinkedIn</div>
+                  <div class="contact-value">in/praveen-kumar-v-6v</div>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square text-muted"></i>
+            </a>
+
+            <a href="https://github.com/praveenkumarv2024a-arch" target="_blank" class="contact-card">
+              <div class="contact-card-left">
+                <div class="contact-icon-box"><i class="fa-brands fa-github"></i></div>
+                <div>
+                  <div class="contact-label">GitHub</div>
+                  <div class="contact-value">praveenkumarv2024a-arch</div>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square text-muted"></i>
+            </a>
+
+            <a href="https://wa.me/919361379516" target="_blank" class="contact-card" style="background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.3);">
+              <div class="contact-card-left">
+                <div class="contact-icon-box" style="background: rgba(16, 185, 129, 0.2); color: #10b981;">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                  <div class="contact-label" style="color: #10b981;">Instant Message</div>
+                  <div class="contact-value">Chat on WhatsApp</div>
+                </div>
+              </div>
+              <i class="fa-solid fa-chevron-right" style="color: #10b981;"></i>
+            </a>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-wrapper">
+            <h3 class="mb-3" style="font-size: 1.5rem; margin-bottom: 0.5rem;">Send a Direct Message</h3>
+            <p class="text-muted mb-4" style="font-size: 0.95rem; margin-bottom: 1.5rem;">Fill in your details and message below for a quick response.</p>
+            
+            <form id="contact-form">
+              <div class="form-group">
+                <label class="form-label" for="sender-name">Your Name</label>
+                <input type="text" id="sender-name" class="form-control" placeholder="e.g. Alex Johnson" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="sender-email">Your Email Address</label>
+                <input type="email" id="sender-email" class="form-control" placeholder="e.g. alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Topic / Purpose</label>
+                <div class="quick-topics">
+                  <span class="topic-chip" onclick="selectTopic('Job Opportunity / Hiring')">💼 Hiring Offer</span>
+                  <span class="topic-chip" onclick="selectTopic('AI / ML Collaboration')">🤝 Project Collab</span>
+                  <span class="topic-chip" onclick="selectTopic('Consultation / Question')">💬 Question</span>
+                </div>
+                <input type="text" id="sender-subject" class="form-control" placeholder="Subject of your message..." required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="sender-message">Message</label>
+                <textarea id="sender-message" class="form-control" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100" id="contact-submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Stock Market Simulator Modal -->
+  <div class="modal-overlay" id="stock-modal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal('stock-modal')">&times;</button>
+      <h3 class="modal-title">📈 Stock Market AI Sentiment & Trading Engine</h3>
+      <div class="modal-subtitle">Simulation of Python Flask + NLP News Sentiment + SHAP Signal Predictor</div>
+
+      <div class="sim-grid">
+        <div class="sim-input-box">
+          <h4 class="mb-3" style="color: var(--primary-cyan); font-size: 1rem;">Market Indicators Input</h4>
+          
+          <div class="range-wrap">
+            <div class="range-label-flex">
+              <span>News Sentiment Index (NLP)</span>
+              <span id="stock-sentiment-val">+0.65 (Bullish)</span>
+            </div>
+            <input type="range" min="-1" max="1" step="0.05" value="0.65" class="range-slider" id="slider-sentiment" oninput="updateStockSim()">
+          </div>
+
+          <div class="range-wrap">
+            <div class="range-label-flex">
+              <span>RSI Indicator (14-day)</span>
+              <span id="stock-rsi-val">48.5</span>
+            </div>
+            <input type="range" min="10" max="90" step="0.5" value="48.5" class="range-slider" id="slider-rsi" oninput="updateStockSim()">
+          </div>
+
+          <div class="range-wrap">
+            <div class="range-label-flex">
+              <span>MACD Crossover Signal</span>
+              <span id="stock-macd-val">+1.85 (Buy)</span>
+            </div>
+            <input type="range" min="-5" max="5" step="0.1" value="1.85" class="range-slider" id="slider-macd" oninput="updateStockSim()">
+          </div>
+        </div>
+
+        <div class="sim-output-box">
+          <div class="sim-score-circle" id="stock-circle">
+            <div class="sim-score-inner">
+              <div class="sim-score-value" id="stock-action">BUY</div>
+              <span style="font-size: 0.75rem; color: var(--text-muted);" id="stock-conf">88% Conf</span>
+            </div>
+          </div>
+          <div id="stock-reason" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">
+            Positive news sentiment and bullish MACD crossover confirm upside momentum.
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4" style="margin-top: 1.5rem;">
+        <h4 style="font-size: 0.95rem; color: var(--primary-blue); margin-bottom: 0.5rem;">SHAP Feature Importance Breakdown:</h4>
+        <canvas id="stockChart" height="130"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loan Predictor Modal -->
+  <div class="modal-overlay" id="loan-modal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal('loan-modal')">&times;</button>
+      <h3 class="modal-title">🧮 Explainable Loan Risk Predictor</h3>
+      <div class="modal-subtitle">Simulation of LightGBM Classifier (85.42% Accuracy) + SHAP Explainability</div>
+
+      <div class="sim-grid">
+        <div class="sim-input-box">
+          <h4 class="mb-3" style="color: var(--primary-cyan); font-size: 1rem;">Applicant Profile Parameters</h4>
+          
+          <div class="range-wrap">
+            <div class="range-label-flex">
+              <span>Credit Score (CIBIL)</span>
+              <span id="loan-credit-val">740</span>
+            </div>
+            <input type="range" min="300" max="850" step="5" value="740" class="range-slider" id="slider-credit" oninput="updateLoanSim()">
+          </div>
+
+          <div class="range-wrap">
+            <div class="range-label-flex">
+              <span>Applicant Monthly Income ($)</span>
+              <span id="loan-income-val">$6,500</span>
+            </div>
+            <input type="range" min="1000" max="20000" step="250" value="6500" class="range-slider" id="slider-income" oninput="updateLoanSim()">
+          </div>
+
+          <div class="range-wrap">
+            <div class="range-label-flex">
+              <span>Loan Amount ($)</span>
+              <span id="loan-amount-val">$18,000</span>
+            </div>
+            <input type="range" min="2000" max="50000" step="500" value="18000" class="range-slider" id="slider-amount" oninput="updateLoanSim()">
+          </div>
+        </div>
+
+        <div class="sim-output-box">
+          <div class="sim-score-circle" id="loan-circle">
+            <div class="sim-score-inner">
+              <div class="sim-score-value" id="loan-status">92%</div>
+              <span style="font-size: 0.75rem; color: var(--accent-emerald);" id="loan-status-text">APPROVED</span>
+            </div>
+          </div>
+          <div id="loan-audit-text" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">
+            Demographic fairness audit: Passed (Disparate Impact Ratio > 0.80).
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4" style="margin-top: 1.5rem;">
+        <h4 style="font-size: 0.95rem; color: var(--primary-blue); margin-bottom: 0.5rem;">SHAP Value Feature Impact:</h4>
+        <canvas id="loanChart" height="130"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- Private Admin Inbox Modal -->
+  <div class="modal-overlay" id="admin-modal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal('admin-modal')">&times;</button>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+        <h3 class="modal-title" style="margin: 0;">🔒 Private Owner Inbox</h3>
+        <div style="display: flex; gap: 0.5rem;">
+          <button class="btn btn-primary" style="padding: 0.4rem 1rem; font-size: 0.85rem;" onclick="exportMessagesToExcel()">
+            <i class="fa-solid fa-file-excel"></i> Export to Excel (.csv)
+          </button>
+          <button class="btn btn-outline" style="padding: 0.4rem 0.85rem; font-size: 0.85rem; border-color: #ef4444; color: #ef4444;" onclick="clearAdminMessages()">
+            <i class="fa-solid fa-trash"></i> Clear
+          </button>
+        </div>
+      </div>
+      <div class="modal-subtitle">Private messages storage for Praveenkumar V (Exportable to Excel / Google Sheets)</div>
+
+      <div id="admin-messages-list" style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem; max-height: 400px; overflow-y: auto;">
+        <!-- Dynamically rendered -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-flex">
+      <div class="footer-copy">
+        &copy; 2026 Praveenkumar V. Built for Data Science & AI Engineering Excellence.
+      </div>
+      <div class="hero-socials">
+        <a href="https://linkedin.com/in/praveen-kumar-v-6v" target="_blank" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/praveenkumarv2024a-arch" target="_blank" class="social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:praveen20026@gmail.com" class="social-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Logic JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
