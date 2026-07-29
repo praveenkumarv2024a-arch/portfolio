@@ -224,9 +224,6 @@ function initSkillsGrid() {
             </div>
           </div>
         </div>
-        <div class="skill-level-bar">
-          <div class="skill-level-fill" style="width: ${skill.level}%"></div>
-        </div>
       `;
       container.appendChild(card);
     });
