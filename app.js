@@ -223,7 +223,6 @@ function initSkillsGrid() {
               <div class="skill-category">${skill.catLabel}</div>
             </div>
           </div>
-          <span style="font-weight: 700; color: var(--primary-cyan); font-size: 0.9rem;">${skill.level}%</span>
         </div>
         <div class="skill-level-bar">
           <div class="skill-level-fill" style="width: ${skill.level}%"></div>
